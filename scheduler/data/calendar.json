@@ -1,15 +1,47 @@
 {
-  "date": "2026-11-28",
-  "planned_start": "19:00",
-  "events": [
+  "as_of": "2026-11-23",
+  "note": "Standing household calendar. No dinner is scheduled yet; these are unrelated prior commitments that may constrain when people are free.",
+  "commitments": [
     {
       "person_id": "g1",
-      "busy_until": "18:00"
+      "date": "2026-11-28",
+      "start": "14:00",
+      "end": "18:00",
+      "title": "Monthly book club",
+      "recurring": true
+    },
+    {
+      "person_id": "g2",
+      "date": "2026-11-28",
+      "start": "09:00",
+      "end": "12:30",
+      "title": "Food bank volunteer shift",
+      "recurring": false
+    },
+    {
+      "person_id": "g4",
+      "date": "2026-11-28",
+      "start": "17:30",
+      "end": "18:45",
+      "title": "Climbing gym session",
+      "recurring": true
     },
     {
       "person_id": "g6",
-      "busy_until": "19:45",
-      "note": "Sam cannot arrive before 19:45; not a confirmed dinner cancellation"
+      "date": "2026-11-28",
+      "start": "16:00",
+      "end": "19:30",
+      "title": "Saturday closing shift at the bike shop",
+      "note": "About 15 minutes to drive home and change afterward.",
+      "recurring": false
+    },
+    {
+      "person_id": "g8",
+      "date": "2026-11-28",
+      "start": "17:00",
+      "end": "18:30",
+      "title": "Kids' soccer match",
+      "recurring": false
     }
   ]
 }

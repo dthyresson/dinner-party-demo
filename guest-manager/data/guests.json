@@ -3,51 +3,43 @@
     "id": "g1",
     "name": "Alex Morgan",
     "relation": "host",
-    "rsvp": "confirmed",
     "diet": "omnivore"
   },
   {
     "id": "g2",
     "name": "Jamie Chen",
-    "rsvp": "confirmed",
     "diet": "omnivore",
     "note": "May request to bring a guest later; not approved initially"
   },
   {
     "id": "g3",
     "name": "Taylor Brooks",
-    "rsvp": "confirmed",
     "diet": "vegan"
   },
   {
     "id": "g4",
     "name": "Morgan Ellis",
-    "rsvp": "confirmed",
     "diet": "severe shellfish allergy",
     "precautions": "No shellfish and prevent cross-contact; check ingredient labels and shared equipment"
   },
   {
     "id": "g5",
     "name": "Priya Shah",
-    "rsvp": "confirmed",
     "diet": "vegetarian"
   },
   {
     "id": "g6",
     "name": "Sam Rivera",
-    "rsvp": "confirmed",
     "diet": "omnivore"
   },
   {
     "id": "g7",
     "name": "Casey Park",
-    "rsvp": "confirmed",
     "diet": "omnivore"
   },
   {
     "id": "g8",
     "name": "Jordan Lee",
-    "rsvp": "confirmed",
     "diet": "omnivore"
   }
 ]

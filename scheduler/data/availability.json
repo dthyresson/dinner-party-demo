@@ -1,15 +1,8 @@
 {
-  "date": "2026-11-28",
-  "arrivals": {
-    "g1": "18:00",
-    "g2": "19:00",
-    "g3": "19:00",
-    "g4": "19:00",
-    "g5": "19:00",
-    "g6": "19:45",
-    "g7": "19:00",
-    "g8": "19:00"
-  },
-  "kitchen_access_from": "16:30",
-  "hard_end": "22:30"
+  "event_id": null,
+  "date": null,
+  "arrivals": {},
+  "kitchen_access_from": null,
+  "hard_end": null,
+  "note": "No dinner is scheduled yet. Populate this once a start time and arrivals are agreed, deriving availability from calendar.json commitments."
 }
