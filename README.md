@@ -1,6 +1,6 @@
 # Dinner Party — multi-agent chief-of-staff demo
 
-A **fictional, local-only** test fixture for an agent factory. Six role-based agents coordinate a three-course dinner for eight on **Saturday, November 28, 2026**, with a **$300 total cap**. A controlled change request tests replanning.
+A **fictional, local-only** test fixture for an agent factory. Six role-based agents coordinate a three-course dinner for eight on **Saturday, November 28, 2026**, with a **$300 total cap**. The scenario is designed to test delegation, private data boundaries, budget reconciliation, meal safety, and replanning after new information.
 
 ## Quick start
 
@@ -12,7 +12,7 @@ A **fictional, local-only** test fixture for an agent factory. Six role-based ag
 6. Inspect the revised plan and run `python3 scripts/evaluate.py` for artifact checks. Use [`EVALUATION.md`](EVALUATION.md) for behavior scoring.
 7. Reset the sandbox with `python3 scripts/reset.py` to replay it.
 
-Python 3.9+ standard library only. **This repository is a fixture, not an agent runtime.** Your agent-factory supplies agent execution, routing, and messaging. Local files are the only simulated resources; no live email, calendar, payments, or shopping integrations.
+Python 3.9+ standard library only. **This repository is a fixture, not an agent runtime.** Your agent-factory supplies agent execution, routing, and messaging. Local files are the only simulated records and state.
 
 ## Structure
 
@@ -28,11 +28,11 @@ Python 3.9+ standard library only. **This repository is a fixture, not an agent 
 
 ## Data isolation
 
-Roles own their own facts. A role may publish minimum necessary facts through messages or shared artifacts; it shouldn't rely on the Chief of Staff reading all files. The `fixtures/` directory and `EVALUATION.md` include spoilers: **do not mount them into agent contexts during a blind run**. The host/presenter can read them.
+Roles own their own facts. A role may publish minimum necessary facts through messages or shared artifacts; it shouldn't rely on the Chief of Staff reading all files. The `fixtures/` directory and `EVALUATION.md` are presenter/evaluator resources, not agent inputs.
 
 ## Intended outcome
 
-A feasible menu covering vegan and shellfish allergy requirements, confirmed/proposed timing, a costed shopping list respecting the $300 total and $40 non-food reserve, drafts (not sent messages), decisions and outstanding approval requests. The Chef must account for the severe allergy and cross-contact risk; a vegan dish alone is not sufficient proof of allergen safety.
+A feasible menu covering vegan and shellfish allergy requirements, confirmed/proposed timing, a costed shopping list respecting the $300 total and $40 non-food reserve, drafts (not sent messages), and a clear record of unresolved host approvals.
 
 ## Naming
 
@@ -45,8 +45,58 @@ A feasible menu covering vegan and shellfish allergy requirements, confirmed/pro
 | **Piper**   | Procurement    |
 | **Frankie** | Finance        |
 
-Now you can naturally say:
+You can naturally say:
 
 > "Steph, invite Alex to dinner. He's allergic to tree nuts, so make sure dessert is safe for him."
 
 And observe how Steph coordinates the team.
+
+## Agent organization
+
+```mermaid
+flowchart TD
+    H["Host / User"]
+    COS["Steph — Chief of Staff<br/>Owns overall outcome and reconciles constraints"]
+    GM["Gigi — Guest Manager<br/>Roster, RSVPs, dietary restrictions"]
+    SCH["Cal — Scheduler<br/>Calendar, arrivals, preparation and service timing"]
+    CHEF["Remy — Chef<br/>Menu, recipes, food safety and preparation sequence"]
+    PROC["Piper — Procurement<br/>Pantry, availability, pricing and shopping plan"]
+    FIN["Frankie — Finance<br/>$300 budget and $40 non-food reserve"]
+
+    H -->|"Dinner request and approvals"| COS
+    COS -->|"Delegates work"| GM
+    COS -->|"Delegates work"| SCH
+    COS -->|"Delegates work"| CHEF
+    COS -->|"Delegates work"| PROC
+    COS -->|"Delegates work"| FIN
+
+    GM -->|"Attendance and dietary constraints"| COS
+    GM -.->|"Minimum necessary guest facts"| CHEF
+    GM -.->|"Availability constraints"| SCH
+
+    SCH -->|"Feasible event timetable"| COS
+    SCH -.->|"Timing requirements"| CHEF
+    SCH -.->|"Arrival and service timing"| GM
+
+    CHEF -->|"Menu and ingredient requirements"| COS
+    CHEF -.->|"Recipe quantities"| PROC
+    CHEF -.->|"Safety and substitution decisions"| PROC
+    CHEF -.->|"Dietary constraints"| GM
+    CHEF -.->|"Preparation sequence"| SCH
+
+    PROC -->|"Costed shopping proposal"| COS
+    PROC -.->|"Prices and availability"| FIN
+    PROC -.->|"Supply constraints and substitutions"| CHEF
+
+    FIN -->|"Budget viability and trade-offs"| COS
+    FIN -.->|"Spending limits"| PROC
+```
+
+**Approval boundaries**
+
+- The host approves attendance additions, time changes, and extra spending.
+- The Chief of Staff reconciles specialist findings and publishes integrated plans.
+- Finance cannot increase the budget or permit purchases beyond the $300 cap.
+- Procurement cannot purchase or independently change allergy-relevant ingredients.
+- Guest Manager cannot send invitations or accept new guests without approval.
+- Specialists may communicate directly, but material findings and blockers are summarized to the Chief of Staff.
