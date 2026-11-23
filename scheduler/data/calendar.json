@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-28",
+  "planned_start": "19:00",
+  "events": [
+    {
+      "person_id": "g1",
+      "busy_until": "18:00"
+    },
+    {
+      "person_id": "g6",
+      "busy_until": "19:45",
+      "note": "Sam cannot arrive before 19:45; not a confirmed dinner cancellation"
+    }
+  ]
+}

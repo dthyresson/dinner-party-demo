@@ -1,0 +1,91 @@
+[
+  {
+    "id": "starter-roasted-carrots",
+    "course": "starter",
+    "name": "Roasted carrots with lemon-tahini sauce",
+    "serves": 8,
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "shellfish-free ingredients"
+    ],
+    "ingredients": {
+      "carrots_kg": 1.6,
+      "tahini_jar": 1,
+      "lemons_each": 3,
+      "olive_oil_ml": 80
+    },
+    "prep_minutes": 35
+  },
+  {
+    "id": "main-shellfish-pasta",
+    "course": "main",
+    "name": "Shrimp linguine",
+    "serves": 8,
+    "diet": [
+      "contains shellfish"
+    ],
+    "ingredients": {
+      "shrimp_kg": 1.6,
+      "linguine_boxes": 3,
+      "garlic_bulbs": 2,
+      "lemons_each": 2
+    },
+    "prep_minutes": 45
+  },
+  {
+    "id": "main-chickpea-stew",
+    "course": "main",
+    "name": "Chickpea, tomato and spinach stew over rice",
+    "serves": 8,
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "shellfish-free ingredients",
+      "gluten-free ingredients"
+    ],
+    "ingredients": {
+      "chickpea_cans": 6,
+      "tomato_cans": 4,
+      "spinach_bags": 2,
+      "rice_kg": 1.2,
+      "onion_each": 3
+    },
+    "prep_minutes": 50
+  },
+  {
+    "id": "main-mushroom-risotto",
+    "course": "main",
+    "name": "Mushroom risotto",
+    "serves": 8,
+    "diet": [
+      "vegetarian",
+      "gluten-free ingredients"
+    ],
+    "ingredients": {
+      "arborio_rice_kg": 1.2,
+      "mushrooms_kg": 1.5,
+      "stock_cartons": 3,
+      "parmesan_g": 250
+    },
+    "prep_minutes": 55
+  },
+  {
+    "id": "dessert-berries",
+    "course": "dessert",
+    "name": "Citrus berries with coconut cream",
+    "serves": 8,
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "shellfish-free ingredients",
+      "gluten-free ingredients"
+    ],
+    "ingredients": {
+      "berries_punnets": 4,
+      "coconut_cream_cans": 3,
+      "oranges_each": 4
+    },
+    "prep_minutes": 20
+  }
+]

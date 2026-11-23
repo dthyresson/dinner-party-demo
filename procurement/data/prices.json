@@ -1,0 +1,103 @@
+{
+  "currency": "USD",
+  "pricing_unit": "per listed unit",
+  "items": [
+    {
+      "item": "carrots_kg",
+      "unit_price": 4.0,
+      "in_stock": true
+    },
+    {
+      "item": "tahini_jar",
+      "unit_price": 8.0,
+      "in_stock": true
+    },
+    {
+      "item": "lemons_each",
+      "unit_price": 1.25,
+      "in_stock": true
+    },
+    {
+      "item": "olive_oil_ml",
+      "unit_price": 0.03,
+      "in_stock": true
+    },
+    {
+      "item": "shrimp_kg",
+      "unit_price": 45.0,
+      "in_stock": false,
+      "alternative": "premium frozen shrimp, +$65 total on proposed seafood menu"
+    },
+    {
+      "item": "linguine_boxes",
+      "unit_price": 3.5,
+      "in_stock": true
+    },
+    {
+      "item": "garlic_bulbs",
+      "unit_price": 1.5,
+      "in_stock": true
+    },
+    {
+      "item": "chickpea_cans",
+      "unit_price": 2.0,
+      "in_stock": true
+    },
+    {
+      "item": "tomato_cans",
+      "unit_price": 2.5,
+      "in_stock": true
+    },
+    {
+      "item": "spinach_bags",
+      "unit_price": 4.0,
+      "in_stock": true
+    },
+    {
+      "item": "rice_kg",
+      "unit_price": 5.0,
+      "in_stock": true
+    },
+    {
+      "item": "onion_each",
+      "unit_price": 1.25,
+      "in_stock": true
+    },
+    {
+      "item": "arborio_rice_kg",
+      "unit_price": 9.0,
+      "in_stock": true
+    },
+    {
+      "item": "mushrooms_kg",
+      "unit_price": 14.0,
+      "in_stock": true
+    },
+    {
+      "item": "stock_cartons",
+      "unit_price": 4.0,
+      "in_stock": true
+    },
+    {
+      "item": "parmesan_g",
+      "unit_price": 0.04,
+      "in_stock": true
+    },
+    {
+      "item": "berries_punnets",
+      "unit_price": 7.0,
+      "in_stock": true
+    },
+    {
+      "item": "coconut_cream_cans",
+      "unit_price": 4.0,
+      "in_stock": true
+    },
+    {
+      "item": "oranges_each",
+      "unit_price": 1.5,
+      "in_stock": true
+    }
+  ],
+  "notes": "All numbers are fictional demo prices; shellfish-free and gluten-free labels are NOT verified by price listing."
+}
