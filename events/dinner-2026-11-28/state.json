@@ -1,15 +1,9 @@
 {
-  "event": "dinner-2026-11-28",
+  "event": null,
   "phase": "planned",
-  "updated_at": null,
-  "seats": [
-    { "role": "chef", "address": null, "introduced": false, "capabilities": [] },
-    { "role": "procurement", "address": null, "introduced": false, "capabilities": [] },
-    { "role": "finance", "address": null, "introduced": false, "capabilities": [] },
-    { "role": "scheduler", "address": null, "introduced": false, "capabilities": [] },
-    { "role": "guest-manager", "address": null, "introduced": false, "capabilities": [] }
-  ],
+  "updated_at": "2026-11-24T14:50:17Z",
+  "seats": [],
   "open_approvals": [],
   "blockers": [],
-  "note": "Maintained by the Planner. phase: planned | seating | planning | negotiating | awaiting_approval | done. seats is filled only from introductions; never invent or assemble an address."
+  "note": "No active event. Reset at the host's instruction on 2026-11-24: the old assumptions (8 people / $300 / Sat 28 Nov and 12 people / $200 / Thu 26 Nov) are dropped and a new event will be defined from scratch. seats is filled only from introductions; never invent or assemble an address."
 }

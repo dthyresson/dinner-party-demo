@@ -1,6 +1,16 @@
 {
   "role": "procurement",
-  "event": "dinner-2026-11-28",
-  "updated_at": null,
-  "tasks": []
+  "event": null,
+  "updated_at": "2026-11-24T14:52:00Z",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Price the new event's menu",
+      "status": "blocked",
+      "requested_by": null,
+      "blocked_on": "Host defines the event; Chef sets the menu and exact ingredient quantities in catalogue units",
+      "needs": "Exact quantities from the Chef, unchanged, plus any host/Planner-confirmed on-hand items",
+      "note": "Old 8/$300/Sat 28 Nov and 12/$200/Thu 26 Nov assumptions dropped at DT's instruction. No event, no on-hand, no quantities, no prices quoted. Budget verdict belongs to Finance."
+    }
+  ]
 }

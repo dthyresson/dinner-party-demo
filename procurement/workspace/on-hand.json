@@ -1,5 +1,5 @@
 {
-  "event": "dinner-2026-11-28",
+  "event": null,
   "confirmed_by": null,
   "items": [],
   "note": "Only what the host or Planner confirms is already on hand. Never assume a pantry. items: [{item, qty, unit}]"
