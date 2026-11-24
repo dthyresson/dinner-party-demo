@@ -1,6 +1,6 @@
 {
   "role": "chef",
-  "event": "dinner-2026-11-28",
+  "event": "thanksgiving-2026-12-covers",
   "updated_at": "2026-11-24",
   "tasks": [
     {
@@ -29,11 +29,9 @@
     {
       "task_id": "t3",
       "from": "host",
-      "title": "Remove old seed recipes (roasted carrots, shrimp linguine, chickpea stew, mushroom risotto, citrus berries) and clean menus",
+      "title": "Remove old seed recipes and clean menus",
       "status": "done",
-      "needs_from": [
-        "host: catalogue holds no starter or main, so no three-course menu can be built"
-      ],
+      "needs_from": [],
       "artifacts": [
         "data/recipes.json"
       ]
@@ -41,7 +39,7 @@
     {
       "task_id": "t4",
       "from": "host",
-      "title": "Add 6 recipes from local Thanksgiving files, add a multi-value tags attribute, tag all with Thanksgiving",
+      "title": "Add 6 recipes from local Thanksgiving files, add a multi-value tags attribute, tag all Thanksgiving",
       "status": "done",
       "needs_from": [],
       "artifacts": [
@@ -51,17 +49,105 @@
     {
       "task_id": "t5",
       "from": "host",
-      "title": "Open questions raised by the new recipes",
+      "title": "Open questions raised by the added recipes",
       "status": "needs_input",
       "needs_from": [
         "host: Mimi's Turkey Stuffing card has ingredients only, no method, oven temperature, time or yield",
         "host: Mimi's card poultry seasoning line reads '1/2 t' with '2 T.' beside it - which is it",
         "host: pearl onions, pumpkin pie and corn pudding state no headcount",
-        "host: cranberry recipes give volume (3 cups, 2 1/4 cups) not servings",
-        "host: the three JPEGs in the folder are byte-identical to Garlic Carrots Julienne, so the two card scans came from Thanksgiving Recipes.pdf instead"
+        "host: cranberry recipes give volume (3 cups, 2 1/4 cups) not servings"
       ],
       "artifacts": [
         "data/recipes.json"
+      ]
+    },
+    {
+      "task_id": "t6",
+      "from": "planner (room seq 43)",
+      "title": "Menu, exact quantities, allergen map and prep order for 12 covers (8 adults, 4 kids), 2 PM Thursday 26 November 2026",
+      "status": "needs_input",
+      "needs_from": [
+        "host: dietary and allergy constraints for the 12. None supplied, so nothing is certified safe",
+        "host: yields for corn pudding and pumpkin pie, which the recipes do not state",
+        "host: how many pies are wanted for 12, including 4 children",
+        "host: ages of the 4 children, for portioning",
+        "host/planner: hob rings and freezer space at the Andover kitchen. Two ovens confirmed, so the oven blocker is closed",
+        "host: whether the bird is fresh or frozen, and when thawing starts"
+      ],
+      "artifacts": [
+        "workspace/menu-draft.md",
+        "workspace/prep-plan.md"
+      ]
+    },
+    {
+      "task_id": "t7",
+      "from": "shopper (room seq 37)",
+      "title": "Send exact quantities in catalogue units for pricing",
+      "status": "done",
+      "needs_from": [],
+      "artifacts": []
+    },
+    {
+      "task_id": "t8",
+      "from": "host via planner (room seq 61 and 63)",
+      "title": "Roast turkey as main, stuffed with Mimi's stuffing, second stuffing batch as a side, stuffing classified as a side dish",
+      "status": "needs_input",
+      "needs_from": [
+        "host: how much stuffing fits inside a 16 lb bird, in cups - sets the in-bird/side split",
+        "host: a safe internal temperature for the stuffing itself. The recipe states 165F for breast and thigh only",
+        "host: confirmation of the 16 lb bird weight, which is my assumption inside the recipe's 14-18 lb band",
+        "host: whether the recipe's unstuffed times need extending, and by how much, once the bird is stuffed",
+        "host: method, oven temperature, time and pan for Mimi's stuffing, without which the side batch is not cookable"
+      ],
+      "artifacts": [
+        "data/recipes.json",
+        "workspace/menu-draft.md",
+        "workspace/prep-plan.md"
+      ]
+    },
+    {
+      "task_id": "t9",
+      "from": "host (room seq 73)",
+      "title": "Add recipe: Sweet Potato Casserole with Marshmallows (allrecipes, serves 8), and put it on the menu at DT's direction",
+      "status": "done",
+      "needs_from": [],
+      "artifacts": [
+        "data/recipes.json",
+        "workspace/menu-draft.md",
+        "workspace/prep-plan.md"
+      ]
+    },
+    {
+      "task_id": "t10",
+      "from": "host (room seq 92)",
+      "title": "Add honey spiral sliced bone-in ham half as a second main, with honey mustard and a second mustard",
+      "status": "needs_input",
+      "needs_from": [
+        "host: servings for a 10 lb half ham, none stated",
+        "host: how long the ham needs out of the fridge to reach room temperature in that kitchen, no time given",
+        "host: whether the 2.99/lb figure is to be treated as current, since it is his and not a quote I verified"
+      ],
+      "artifacts": [
+        "data/recipes.json",
+        "workspace/menu-draft.md",
+        "workspace/prep-plan.md"
+      ]
+    },
+    {
+      "task_id": "t11",
+      "from": "host (room seq 117)",
+      "title": "Add mashed potatoes to the Thanksgiving menu: 5 lb russets, 2 sticks unsalted butter, about 1 cup light cream or whole milk, pepper",
+      "status": "needs_input",
+      "needs_from": [
+        "host: whether the missing salt is deliberate or an omission - 5 lb of unsalted mash beside a salty ham",
+        "host: servings, not stated",
+        "host: hob ring count at Andover, because onions, carrots and the mash finish all want the last 20 minutes",
+        "host: whether the cream or the whole milk is the one to buy, since the direction allows either"
+      ],
+      "artifacts": [
+        "data/recipes.json",
+        "workspace/menu-draft.md",
+        "workspace/prep-plan.md"
       ]
     }
   ]

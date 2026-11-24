@@ -1,5 +1,46 @@
 [
   {
+    "id": "main-roast-turkey",
+    "course": "main",
+    "name": "Roast Turkey",
+    "source": "host-supplied: How to cook turkey in a conventional oven",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown - the source gives times by weight and no size for a headcount",
+    "diet": [
+      "shellfish-free ingredients",
+      "gluten-free ingredients"
+    ],
+    "ingredients": {
+      "whole_turkey_lbs": "chosen by the cook from the weight bands below",
+      "vegetable_oil_or_melted_butter": "to brush the breast, quantity not stated",
+      "aluminum_foil": "a loose tent for the breast once it is golden"
+    },
+    "prep_minutes": "unknown",
+    "notes": "325F. Times by weight: 6-8 lb 2 1/4-2 3/4 h; 8-12 lb 2 3/4-3 h; 12-14 lb 3-3 3/4 h; 14-18 lb 3 3/4-4 1/4 h; 18-20 lb 4 1/4-4 1/2 h; 20-24 lb 4 1/2-5 h; 24-28 lb 5-5 1/2 h. Breast-side up on a rack in a shallow roasting pan, brushed with vegetable oil or melted butter; tent loosely with foil once the breast is golden. Done at 165F in the thickest part of the breast away from the bone and in the thighs. Stand 10 minutes before slicing. Dairy-free only if oil is used rather than butter. The source gives no size for a headcount, no stuffing capacity and no temperature for stuffing in the cavity; its times are for an unstuffed bird."
+  },
+  {
+    "id": "main-honey-spiral-ham",
+    "course": "main",
+    "name": "Honey Spiral Sliced Bone-In Ham, Half",
+    "source": "host direction, Carando honey spiral ham, about 10 lb half",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown - about 10 lb half ham, servings not stated",
+    "diet": [
+      "contains pork"
+    ],
+    "ingredients": {
+      "honey_spiral_ham_half_lbs": "about 10, bone-in",
+      "honey_mustard": "to serve, quantity not stated",
+      "swedish_mustard": "to serve, quantity not stated - host confirms Swedish mustard, Slotts or IKEA"
+    },
+    "prep_minutes": "unknown",
+    "notes": "Host directions: bring up to room temperature and serve. No cooking time or oven temperature given. It needs no oven, which matters on this menu because three other dishes already compete for one. Mustard is a declared allergen in some jurisdictions and honey mustard may also contain egg depending on the brand - check labels. No price is recorded in my files; costing is Procurement's."
+  },
+  {
     "id": "side-garlic-carrots-julienne",
     "course": "side",
     "name": "Garlic Carrots Julienne",
@@ -49,7 +90,7 @@
       "poultry_seasoning": "1/2 t, with '2 T.' written beside it on the card"
     },
     "prep_minutes": "unknown",
-    "notes": "The card lists ingredients only: no method, oven temperature, bake time, yield or pan size. Marginal note in another hand reads 'Blarg' (uncertain reading). Poultry seasoning is the herb blend; no meat is listed, but the name and any pan juices are for Guest Manager to rule on."
+    "notes": "The card lists ingredients only: no method, oven temperature, bake time, yield or pan size, so it is not cookable as written. Written for stuffing a bird; host direction is to use it two ways, one batch inside the turkey and a second baked as a side. Marginal note in another hand reads 'Blarg' (uncertain reading). Poultry seasoning is the herb blend; no meat is listed, but the name and any pan juices are for Guest Manager to rule on."
   },
   {
     "id": "side-pearl-onions",
@@ -182,6 +223,51 @@
     },
     "prep_minutes": 10,
     "notes": "Cook 30 minutes: bake uncovered at 350F for 25 minutes until hot and bubbling, stir, scatter the remaining onions, bake 5 minutes more until golden. Source recipe names specific brands and a 3-qt baking dish. Gluten and soy come from the soy sauce and the fried onions; verify labels and cross-contact before asserting anything allergy-safe."
+  },
+  {
+    "id": "side-sweet-potato-casserole",
+    "course": "side",
+    "name": "Sweet Potato Casserole with Marshmallows",
+    "source": "https://www.allrecipes.com/recipe/13478/sweet-potato-casserole-ii/",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": 8,
+    "diet": [
+      "contains dairy"
+    ],
+    "ingredients": {
+      "sweet_potatoes_each": "5, peeled and sliced",
+      "brown_sugar_cups": "1/2, packed",
+      "butter_cups": "1/4",
+      "orange_juice_tablespoons": 3,
+      "ground_cinnamon": "1 pinch",
+      "miniature_marshmallows_packages_10_5oz": 1
+    },
+    "prep_minutes": 15,
+    "notes": "Yield 1 x 9x13-inch casserole, 8 servings. 350F. Boil the sliced sweet potatoes in water to cover until a fork pierces easily, about 15 minutes; drain and mash. Beat with the brown sugar, butter, orange juice and cinnamon until smooth. Spread in the 9x13 dish, scatter the marshmallows over the top, bake 25-30 minutes until hot and the marshmallows are puffed and golden, watching closely at the end so they do not scorch. Stand a few minutes before serving. Total time about 1 hour. Marshmallows normally contain gelatin, so this is not vegetarian unless the pack says otherwise - verify the label."
+  },
+  {
+    "id": "side-mashed-potatoes",
+    "course": "side",
+    "name": "Mashed Potatoes",
+    "source": "host direction",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown - 5 lb of russets, servings not stated",
+    "diet": [
+      "vegetarian",
+      "contains dairy"
+    ],
+    "ingredients": {
+      "russet_potatoes_lbs": 5,
+      "unsalted_butter_sticks": 2,
+      "light_cream_or_whole_milk_cups": "about 1",
+      "black_pepper": "to taste"
+    },
+    "prep_minutes": "unknown",
+    "notes": "Host method: boil the potatoes, then mash, then add 2 sticks of unsalted butter and about 1 cup of light cream or whole milk, and pepper to taste. No salt is listed; no boil time, no yield and no oven step. Vegetarian, contains dairy, not vegan. Wants making close to service and holding warm, so it belongs at the end of the hob queue."
   },
   {
     "id": "dessert-pumpkin-ice-cream-pie",

@@ -1,16 +1,17 @@
 {
   "role": "procurement",
-  "event": null,
-  "updated_at": "2026-11-24T14:52:00Z",
+  "event": "thanksgiving-2026-11-26",
+  "updated_at": "2026-11-24T15:40:00Z",
   "tasks": [
     {
       "id": "T1",
-      "title": "Price the new event's menu",
+      "title": "Price the Thanksgiving menu for 12 covers",
       "status": "blocked",
-      "requested_by": null,
-      "blocked_on": "Host defines the event; Chef sets the menu and exact ingredient quantities in catalogue units",
-      "needs": "Exact quantities from the Chef, unchanged, plus any host/Planner-confirmed on-hand items",
-      "note": "Old 8/$300/Sat 28 Nov and 12/$200/Thu 26 Nov assumptions dropped at DT's instruction. No event, no on-hand, no quantities, no prices quoted. Budget verdict belongs to Finance."
+      "requested_by": "Chef (room seq 65, 79, 84, 95, 114, 121); DT supplied Market Basket figures at seq 105",
+      "blocked_on": "Catalogue coverage: 52 of 56 requested lines have no price line. Six lines carry DT's Market Basket estimates mapped at $26.62 unverified. Still open with DT: green bean can size/unit, sugar bag size, loose onions, and whether Market Basket is the event's price source. Butter pack pricing unresolved. No Finance seat exists; the list is at results/shopping-list.md addressed to the Planner until DT names a recipient.",
+      "needs": "DT: green bean unit and pack size, sugar bag size, working-price decision. Then a verified ham price, mustard quantities, oil and ice cream quantities, and butter pack pricing (6 sticks across three dishes).",
+      "note": "Old 8/$300/Sat 28 Nov and 12/$200/Thu 26 Nov assumptions dropped at DT's instruction. Event confirmed via Planner: Thanksgiving dinner, Thu 26 Nov 2026, 2 PM, 12 people (8 adults, 4 kids), Andover. Budget cap unset; no budget statement. No on-hand confirmed; no substitutions. Catalogue-priced lines: carrots 3 lb $5.44, 2 generic onions $2.50, 1 orange $1.50, garlic 1 bulb $1.50; $10.94, not a food cost. Host (DT) estimates kept separate and unverified: turkey $14.24, carrots 5 lb bag $2.90, corn 3 lb bag $2.99, cranberries $1.49, stuffing potato bag $2.50, mash-side russet bag $2.50; six-line sum $26.62; green beans $3.96 only if per can; onion bag is a fallback, not counted. Potatoes split deliberately across two dishes, 10 lb total, 1 lb spare visible; Chef's 1 cup mash per lb raw is an assumption, not a recipe figure. Ham ~10 lb unpriced; DT's $2.99/lb host-supplied and excluded from totals. Mustards unpriced; mustard allergen and possible egg flagged; second mustard settled as Swedish (Slotts or IKEA). Mash side adds 2 sticks unsalted butter: 6 sticks across the menu, pack-vs-sticks unresolved; cream or whole milk carried as one line. Sweet potato casserole 6 lines unpriced; marshmallows may contain gelatin (dietary flag with Planner). Cinnamon unknown by Chef's ruling. Pearl onion not the generic onion. Orange line contingent on relish. Two ovens confirmed. Brussels sprouts listed by DT but not on the menu, so not added.",
+      "last_exchange": "Chef seq 121 added a Mashed Potatoes side: russet potatoes 5 lb, unsalted butter 2 sticks, light cream or whole milk ~1 cup, black pepper to taste. Shopper added 4 lines, split the potatoes into two visible 5 lb bags, moved the host-estimate total to $26.62 over six lines, carried cream/milk as one unpriced line, flagged the 6-stick butter question, and replied. List: 56 lines, 4 catalogue-priced ($10.94), 52 with no catalogue price."
     }
   ]
 }

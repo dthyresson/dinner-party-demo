@@ -1,0 +1,120 @@
+{
+  "event": "thanksgiving-2026-11-26",
+  "phase": "planning",
+  "updated_at": "2026-11-24T17:04:25Z",
+  "seats": [
+    {
+      "role": "chef",
+      "address": "@dthyresson.command-code-mac-mini.chef",
+      "introduced": true,
+      "capabilities": ["recipe catalogue", "menu selection", "quantities", "dietary safety", "prep order"]
+    },
+    {
+      "role": "procurement",
+      "address": "@dthyresson.command-code-mac-mini.shopper",
+      "introduced": true,
+      "capabilities": ["price catalogue", "stock status", "costed shopping proposal", "out-of-stock flags", "on-hand deduction"]
+    }
+  ],
+  "open_approvals": [
+    {
+      "item": "The menu as a whole: turkey and ham, eight side dishes, condiments, dessert — proposed and unapproved",
+      "owner": "host",
+      "asked_of": "host",
+      "since": "2026-11-24T15:13:37Z"
+    },
+    {
+      "item": "Headcount: a room participant posted 'Only 2 of us' (Gilman, seq 124). Every quantity assumes 12 (8 adults, 4 kids) as the host set. Host must confirm 2 covers or 12 with 2 replied",
+      "owner": "host",
+      "asked_of": "host",
+      "since": "2026-11-24T17:04:25Z"
+    }
+  ],
+  "blockers": [
+    {
+      "item": "Headcount in doubt: Gilman posted 'Only 2 of us. No dietary constraints.' in the room. All quantities, the menu and the shopping list assume 12 covers as the host set; a headcount change means rebuilding the menu, not trimming it",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T17:04:25Z"
+    },
+    {
+      "item": "Dietary: 'no dietary constraints' was stated by Gilman, not the host. Host to confirm before the gelatin, mustard and egg items are downgraded to label notes",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T17:04:25Z"
+    },
+    {
+      "item": "Stuffing method and safety temperature missing: the stuffing card has no method, oven temperature, time or pan, and the turkey recipe sets 165F for breast and thigh only. Host to supply a stuffing card with its own safe internal temperature, or direct that both batches be baked as sides with none in the bird",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T15:06:01Z"
+    },
+    {
+      "item": "Bird size assumption: chef sized 16 lb (14-18 lb band; 3 h 45 to 4 h 15 at 325F) for 12 with leftovers; host to confirm or change",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T15:06:01Z"
+    },
+    {
+      "item": "Bird fresh or frozen not stated; if frozen, thawing must start 2026-11-24",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T15:06:01Z"
+    },
+    {
+      "item": "Hob capacity at Andover unknown: between 1:35 and 1:55 the pearl onions, carrots and finishing the mash all want a ring. Chef has a two-ring plan; one ring is a different plan",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T17:04:25Z"
+    },
+    {
+      "item": "Menu approval: the host has not approved or amended the menu; four safety and feasibility items remain his",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T15:13:37Z"
+    },
+    {
+      "item": "Price data still open: catalogue prices cover 4 of 56 lines ($10.94), and the host has supplied Market Basket estimates for 6 lines ($26.62, unverified, kept separate). Host must confirm whether Market Basket is the working price for the event",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T17:04:25Z"
+    },
+    {
+      "item": "Ham price is host-supplied only: DT states $2.99/lb, unverified, with no catalogue line. A verified price needs a source before Finance can use it",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T15:20:02Z"
+    },
+    {
+      "item": "Budget cap not set",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T14:53:06Z"
+    },
+    {
+      "item": "Ham servings and leftover intent unstated: about 10 lb beside a 16 lb bird is a lot for 12; chef will not trim or invent a portion count",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T15:20:02Z"
+    },
+    {
+      "item": "Venue details beyond the two ovens unknown: freezer space, pan sizes for a 1.5x sweet potato casserole, and whether cooking happens in Andover or at home and is transported",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T14:57:30Z"
+    },
+    {
+      "item": "Pie count undecided: chef says one pumpkin ice cream pie is likely short for 12 including four kids",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T14:57:30Z"
+    },
+    {
+      "item": "Finance, Scheduler and Guest Manager have no seat in the room; Scheduler is load-bearing now that the date is fixed",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T14:58:06Z"
+    }
+  ],
+  "note": "Host-defined event: Thanksgiving dinner, Thursday 2026-11-26, service 2 PM, 12 people (8 adults, 4 kids) as the host set, at his sister's house in Andover with two ovens. Menu: stuffed roast turkey (16 lb assumption) and a half honey spiral bone-in ham (~10 lb, room temperature), eight side dishes including Mimi's stuffing in two batches, mashed potatoes added at the host's direction, a second 5 lb bag of russets for them, honey mustard plus confirmed Swedish mustard, and one pumpkin pie. Procurement holds 56 lines: 4 catalogue-priced at $10.94, 6 host estimates at $26.62, 52 without a catalogue price. Nothing approved, ordered or bought. No brief.md or manifest.json exists for this event; those are the host's setup input, not the Planner's to write."
+}
