@@ -1,6 +1,6 @@
 {
   "role": "chef",
-  "event": "thanksgiving-2026-12-covers",
+  "event": "thanksgiving-2026-14-covers",
   "updated_at": "2026-11-24",
   "tasks": [
     {
@@ -64,10 +64,10 @@
     {
       "task_id": "t6",
       "from": "planner (room seq 43)",
-      "title": "Menu, exact quantities, allergen map and prep order for 12 covers (8 adults, 4 kids), 2 PM Thursday 26 November 2026",
+      "title": "Menu, exact quantities, allergen map and prep order for 14 covers (10 adults, 4 kids), 2 PM Thursday 26 November 2026",
       "status": "needs_input",
       "needs_from": [
-        "host: dietary and allergy constraints for the 12. None supplied, so nothing is certified safe",
+        "host: dietary and allergy constraints for the 14. Gilman posted none, DT has not confirmed, so nothing is certified safe",
         "host: yields for corn pudding and pumpkin pie, which the recipes do not state",
         "host: how many pies are wanted for 12, including 4 children",
         "host: ages of the 4 children, for portioning",
@@ -148,6 +148,21 @@
         "data/recipes.json",
         "workspace/menu-draft.md",
         "workspace/prep-plan.md"
+      ]
+    },
+    {
+      "task_id": "t12",
+      "from": "host via planner (room seq 154 and 156)",
+      "title": "Put beverages on the menu and the shopping list, no recipes: sparkling water, soda, apple cider, coffee, tea",
+      "status": "needs_input",
+      "needs_from": [
+        "host: confirm or replace my per-head figures - none of them is sourced, they are planning assumptions",
+        "host: cloudy farm cider or clear sweet cider, not interchangeable at the table",
+        "host: whether the 4 children get juice instead of soda, which is their parents' call",
+        "host: which coffee machine Andover has, drip or pod, because filters or pods are bought differently"
+      ],
+      "artifacts": [
+        "workspace/menu-draft.md"
       ]
     }
   ]

@@ -1,24 +1,24 @@
 {
   "role": "planner",
   "event": "thanksgiving-2026-11-26",
-  "updated_at": "2026-11-24T15:06:01Z",
+  "updated_at": "2026-11-24T17:17:32Z",
   "tasks": [
     {
       "id": "T1",
       "owner": "chef",
       "address": "@dthyresson.command-code-mac-mini.chef",
-      "task": "Menu, exact quantities, allergen map, prep order for 12 at 2 PM",
+      "task": "Menu, exact quantities, allergen map, prep order",
       "status": "done",
       "depends_on": [],
-      "result": "Revised menu delivered in room seq 64: turkey main with host recipe, two stuffing batches, five sides, dessert. Quantities released to procurement with the 16 lb bird marked as an assumption. Gaps recorded as host decisions: stuffing method and safety temperature, oven capacity, bird size, thaw."
+      "result": "Menu revised for 14 covers (room seq 134): four dish groups rescaled, turkey 16 lb now host-confirmed, stuffing split between bird and side. Allergy consequences and the stuffing temperature gap carry over as host questions."
     },
     {
       "id": "T2",
       "owner": "host",
-      "task": "Confirm event date: 2026-11-16 given, but that is a Monday and already past; Thanksgiving is 2026-11-26",
+      "task": "Confirm event date",
       "status": "done",
       "depends_on": [],
-      "result": "Host confirmed 2026-11-26 in the room on 2026-11-24."
+      "result": "Host confirmed 2026-11-26."
     },
     {
       "id": "T3",
@@ -30,14 +30,15 @@
     {
       "id": "T4",
       "owner": "host",
-      "task": "Provide allergies and dietary needs, and the ages of the four kids",
-      "status": "blocked",
-      "depends_on": []
+      "task": "Provide allergies and dietary needs",
+      "status": "done",
+      "depends_on": [],
+      "result": "Host reported one guest with a severe tree nut and poppy seed allergy and no cross-contamination (room seq 136, 142). This supersedes Gilman's 'no dietary constraints'."
     },
     {
       "id": "T5",
       "owner": "host",
-      "task": "Say whether cooking happens at the sister's house in Andover or at home and is transported; list ovens, hob rings and freezer space there",
+      "task": "State hob rings, freezer space, pan sizes and whether cooking happens in Andover or at home and is transported",
       "status": "blocked",
       "depends_on": []
     },
@@ -45,10 +46,10 @@
       "id": "T6",
       "owner": "procurement",
       "address": "@dthyresson.command-code-mac-mini.shopper",
-      "task": "Price the chef's quantities from zero",
+      "task": "Price the chef's quantities",
       "status": "blocked",
       "depends_on": ["T10"],
-      "result": "56 lines. Catalogue prices 4 lines at $10.94; host Market Basket estimates map 6 lines at $26.62 (turkey, carrots, frozen corn, cranberries, two potato bags), kept separate and unverified. 52 lines carry no catalogue price. Published results/shopping-list.md. Awaiting the working-price decision."
+      "result": "61 lines after beverages. 4 catalogue-priced at $13.35; 6 host Market Basket estimates at $28.12 (unverified, separate); 57 without a catalogue price. Beverage lines are unknown pending the chef's quantities. Published results/shopping-list.md. Awaiting the working-price decision."
     },
     {
       "id": "T7",
@@ -62,129 +63,184 @@
       "owner": "scheduler",
       "task": "Timetable for a 2 PM service, including travel to Andover",
       "status": "blocked",
-      "depends_on": ["T5", "T14"]
+      "depends_on": ["T5"]
     },
     {
       "id": "T9",
       "owner": "host",
-      "task": "Supply a main dish recipe (weight, oven temperature, time, resting) or confirm the dinner is deliberately sides-only",
+      "task": "Supply a main dish recipe",
       "status": "done",
       "depends_on": [],
-      "result": "Host supplied the roast turkey recipe on 2026-11-24 (room seq 63)."
+      "result": "Turkey recipe supplied by the host."
     },
     {
       "id": "T10",
       "owner": "host",
-      "task": "Decide price-data coverage: expand the catalogue from a source the host approves, or accept a plan that can only be costed for produce",
+      "task": "Decide the working price source: Market Basket, or expand the catalogue from an approved source",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T11",
       "owner": "host",
-      "task": "Decide one pie or two for 12 including four kids",
+      "task": "Decide one pie or two for 14",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T12",
       "owner": "guest-manager",
-      "task": "Guest list, RSVP state, dietary constraints and invitation drafts (role not yet seated)",
+      "task": "Guest list, RSVP state and invitation drafts (role not seated)",
       "status": "blocked",
-      "depends_on": ["T2"]
+      "depends_on": []
     },
     {
       "id": "T13",
       "owner": "host",
-      "task": "Supply a stuffing method with its own safe internal temperature, pan and time, or direct that both stuffing batches be baked as sides with none in the bird",
+      "task": "Give the stuffing's own safe internal temperature, or send a stuffing method that carries one",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T14",
       "owner": "host",
-      "task": "State the oven capacity at the Andover kitchen, or choose: two ovens, drop a baked side, or reheat",
+      "task": "State the oven capacity at Andover",
       "status": "done",
       "depends_on": [],
-      "result": "Host confirmed two ovens at Andover on 2026-11-24. Chef sequenced the bird in Oven A from 9:50 and the three 350F sides in Oven B from about 11:50; nothing is dropped."
+      "result": "Two ovens confirmed."
     },
     {
       "id": "T15",
       "owner": "host",
-      "task": "Say whether the turkey is fresh or frozen; if frozen, start thawing on 2026-11-24",
+      "task": "Say whether the turkey is fresh or frozen",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T16",
       "owner": "host",
-      "task": "Confirm or change the chef's assumed 16 lb bird",
-      "status": "blocked",
-      "depends_on": []
+      "task": "Confirm or change the 16 lb bird",
+      "status": "done",
+      "depends_on": [],
+      "result": "Host confirmed 16 lb on 2026-11-24."
     },
     {
       "id": "T17",
       "owner": "host",
-      "task": "Approve or amend the menu as a whole: turkey, seven sides, one dessert",
+      "task": "Approve or amend the menu as a whole for 14 covers",
       "status": "blocked",
-      "depends_on": ["T4", "T13", "T14", "T16"]
+      "depends_on": ["T13", "T26", "T27"]
     },
     {
       "id": "T18",
       "owner": "host",
-      "task": "Say whether anyone at the table is vegetarian, in view of the gelatin in the sweet potato casserole's marshmallows",
+      "task": "Say whether anyone at the table is vegetarian; the 'no constraints' claim is superseded, so this is unconfirmed",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T19",
       "owner": "host",
-      "task": "Settle the second mustard's name, written as 'sdwedsh mustard'; do not buy until confirmed",
+      "task": "Settle the second mustard's name",
       "status": "done",
       "depends_on": [],
-      "result": "Host confirmed Swedish mustard on 2026-11-24, citing Slotts or IKEA. The line stays unknown for price; no catalogue entry."
+      "result": "Swedish mustard, Slotts or IKEA, host-confirmed."
     },
     {
       "id": "T20",
       "owner": "host",
-      "task": "Say whether leftovers are wanted at about 10 lb of ham for 12, or whether to trim it",
+      "task": "Say whether leftovers are wanted at about 10 lb of ham for 14, or whether to trim it",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T21",
       "owner": "host",
-      "task": "Give a verifiable ham price source; the stated $2.99/lb is host-supplied and unverified, so Finance cannot use it",
+      "task": "Give a verifiable ham price source",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T22",
       "owner": "host",
-      "task": "Confirm the headcount: Gilman posted 'Only 2 of us' — is the dinner for 2, or for 12 with 2 having replied?",
-      "status": "blocked",
-      "depends_on": []
+      "task": "Confirm the headcount",
+      "status": "done",
+      "depends_on": [],
+      "result": "Host confirmed 14 people — 10 adults, 4 kids (room seq 133), superseding 12."
     },
     {
       "id": "T23",
       "owner": "host",
-      "task": "Confirm whether 'no dietary constraints', stated by Gilman, is the host's own word",
-      "status": "blocked",
-      "depends_on": []
+      "task": "Confirm whether 'no dietary constraints' was the host's own word",
+      "status": "done",
+      "depends_on": [],
+      "result": "Superseded: the host reported a severe tree nut and poppy seed allergy."
     },
     {
       "id": "T24",
       "owner": "host",
-      "task": "State how many hob rings the Andover kitchen has; the chef's finish sequence between 1:35 and 1:55 depends on it",
+      "task": "State how many hob rings the Andover kitchen has",
       "status": "blocked",
       "depends_on": []
     },
     {
       "id": "T25",
       "owner": "chef",
-      "task": "If the headcount is 2, rebuild the menu from the catalogue for 2 covers rather than trimming the 12-cover menu",
+      "task": "Rebuild the menu for 2 covers if the headcount had fallen",
+      "status": "done",
+      "depends_on": [],
+      "result": "Not triggered: headcount is 14 and the menu was rescaled instead."
+    },
+    {
+      "id": "T26",
+      "owner": "host",
+      "task": "Say whether the Andover kitchen has ever had tree nuts in it",
       "status": "blocked",
-      "depends_on": ["T22"]
+      "depends_on": []
+    },
+    {
+      "id": "T27",
+      "owner": "host",
+      "task": "Confirm a vanilla ice cream with no 'may contain' or shared-facility statement, or plan the dessert differently",
+      "status": "done",
+      "depends_on": [],
+      "result": "Host cleared the named branded packaged goods, including the ice cream, on prior safe use. Brand-specific, no substitutes; a shop substitution puts the label back in play."
+    },
+    {
+      "id": "T28",
+      "owner": "host",
+      "task": "Decide whether the mash stays 5 lb at 14 covers, as the chef flags it as light",
+      "status": "blocked",
+      "depends_on": []
+    },
+    {
+      "id": "T29",
+      "owner": "chef",
+      "task": "Set beverage quantities for 14: sparkling water, soda, apple cider, coffee, tea, including diet/regular, decaf and coffee/tea fixings",
+      "status": "done",
+      "depends_on": [],
+      "result": "Chef proposed figures on 2026-11-24, explicitly as a planning assumption with no sourced basis: 4 l sparkling water, 24 cans soda (half diet), 1/2 gal cider, 15 cups coffee plus decaf, 8 tea bags, plus milk/cream (no nut milks), sugar, lemon, filters or pods, ice. Host to confirm or replace wholesale."
+    },
+    {
+      "id": "T30",
+      "owner": "procurement",
+      "task": "Add beverage and fixing lines to the shopping list once quantities are set; keep them unknown until then",
+      "status": "requested",
+      "depends_on": []
+    },
+    {
+      "id": "T31",
+      "owner": "host",
+      "task": "Say whether the four kids get juice instead of soda; the chef will not decide it for the parents",
+      "status": "blocked",
+      "depends_on": []
+    },
+    {
+      "id": "T32",
+      "owner": "host",
+      "task": "Say whether the coffee machine takes filters or pods",
+      "status": "blocked",
+      "depends_on": []
     }
   ]
 }

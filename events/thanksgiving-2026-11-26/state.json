@@ -1,7 +1,7 @@
 {
   "event": "thanksgiving-2026-11-26",
   "phase": "planning",
-  "updated_at": "2026-11-24T17:04:25Z",
+  "updated_at": "2026-11-24T17:25:06Z",
   "seats": [
     {
       "role": "chef",
@@ -18,48 +18,36 @@
   ],
   "open_approvals": [
     {
-      "item": "The menu as a whole: turkey and ham, eight side dishes, condiments, dessert — proposed and unapproved",
+      "item": "The menu as a whole for 14 covers: turkey and ham, eight side dishes, condiments, beverages, dessert — proposed and unapproved",
       "owner": "host",
       "asked_of": "host",
       "since": "2026-11-24T15:13:37Z"
-    },
-    {
-      "item": "Headcount: a room participant posted 'Only 2 of us' (Gilman, seq 124). Every quantity assumes 12 (8 adults, 4 kids) as the host set. Host must confirm 2 covers or 12 with 2 replied",
-      "owner": "host",
-      "asked_of": "host",
-      "since": "2026-11-24T17:04:25Z"
     }
   ],
   "blockers": [
     {
-      "item": "Headcount in doubt: Gilman posted 'Only 2 of us. No dietary constraints.' in the room. All quantities, the menu and the shopping list assume 12 covers as the host set; a headcount change means rebuilding the menu, not trimming it",
+      "item": "Stuffing safety temperature: the turkey recipe gives 165F for breast and thigh only and times for an unstuffed bird. Host confirmed part of the stuffing goes in the bird, but has not given the stuffing's own safe internal temperature, so the chef will not sign off the stuffed turkey",
       "owner": "host",
       "waiting_on": "host",
-      "since": "2026-11-24T17:04:25Z"
+      "since": "2026-11-24T17:17:32Z"
     },
     {
-      "item": "Dietary: 'no dietary constraints' was stated by Gilman, not the host. Host to confirm before the gelatin, mustard and egg items are downgraded to label notes",
+      "item": "One guest has a severe tree nut and poppy seed allergy with no cross-contamination permitted. The host has cleared the named branded packaged goods he has used before — vanilla ice cream, marshmallows, crispy fried onions, pie shell — on prior safe use. That clearance is brand-specific and carries no substitutes; if the shop substitutes, the label matters again. Bread crumbs must be plain (poppy seed)",
       "owner": "host",
       "waiting_on": "host",
-      "since": "2026-11-24T17:04:25Z"
+      "since": "2026-11-24T17:20:42Z"
     },
     {
-      "item": "Stuffing method and safety temperature missing: the stuffing card has no method, oven temperature, time or pan, and the turkey recipe sets 165F for breast and thigh only. Host to supply a stuffing card with its own safe internal temperature, or direct that both batches be baked as sides with none in the bird",
+      "item": "Kitchen provenance unknown: has the Andover kitchen ever had tree nuts in it, and what is the cleaning plan for boards, racks and the hob? At severe, that decides whether the plan holds",
       "owner": "host",
       "waiting_on": "host",
-      "since": "2026-11-24T15:06:01Z"
+      "since": "2026-11-24T17:17:32Z"
     },
     {
-      "item": "Bird size assumption: chef sized 16 lb (14-18 lb band; 3 h 45 to 4 h 15 at 325F) for 12 with leftovers; host to confirm or change",
+      "item": "Beverages: the chef proposed quantities on 2026-11-24 as a planning assumption with no sourced basis — sparkling water about 4 litres, soda 24 cans roughly half diet, cider half a gallon, coffee about 15 cups plus decaf, tea about 8 bags, and fixings (milk or cream one pint, no nut milks; sugar; a lemon; filters or pods; ice). Host confirmed cloudy farm cider on 2026-11-24. Kids' juice versus soda, and whether the machine takes filters or pods, remain unresolved",
       "owner": "host",
       "waiting_on": "host",
-      "since": "2026-11-24T15:06:01Z"
-    },
-    {
-      "item": "Bird fresh or frozen not stated; if frozen, thawing must start 2026-11-24",
-      "owner": "host",
-      "waiting_on": "host",
-      "since": "2026-11-24T15:06:01Z"
+      "since": "2026-11-24T17:20:42Z"
     },
     {
       "item": "Hob capacity at Andover unknown: between 1:35 and 1:55 the pearl onions, carrots and finishing the mash all want a ring. Chef has a two-ring plan; one ring is a different plan",
@@ -68,16 +56,16 @@
       "since": "2026-11-24T17:04:25Z"
     },
     {
-      "item": "Menu approval: the host has not approved or amended the menu; four safety and feasibility items remain his",
+      "item": "Bird fresh or frozen not stated; if frozen, thawing must start 2026-11-24",
       "owner": "host",
       "waiting_on": "host",
-      "since": "2026-11-24T15:13:37Z"
+      "since": "2026-11-24T15:06:01Z"
     },
     {
-      "item": "Price data still open: catalogue prices cover 4 of 56 lines ($10.94), and the host has supplied Market Basket estimates for 6 lines ($26.62, unverified, kept separate). Host must confirm whether Market Basket is the working price for the event",
+      "item": "Price data still open: catalogue prices cover 4 of 61 lines ($13.35), and 57 lines carry no catalogue price. The host has supplied Market Basket estimates for 6 lines ($28.12, unverified, kept separate). Host must confirm whether Market Basket is the working price for the event",
       "owner": "host",
       "waiting_on": "host",
-      "since": "2026-11-24T17:04:25Z"
+      "since": "2026-11-24T17:17:32Z"
     },
     {
       "item": "Ham price is host-supplied only: DT states $2.99/lb, unverified, with no catalogue line. A verified price needs a source before Finance can use it",
@@ -92,19 +80,19 @@
       "since": "2026-11-24T14:53:06Z"
     },
     {
-      "item": "Ham servings and leftover intent unstated: about 10 lb beside a 16 lb bird is a lot for 12; chef will not trim or invent a portion count",
+      "item": "Quantities scaled for 12 still stand at 14: one pumpkin pie and 5 lb of mash. Chef advises two pies and flags the mash as light; he will not change either without the host",
+      "owner": "host",
+      "waiting_on": "host",
+      "since": "2026-11-24T17:17:32Z"
+    },
+    {
+      "item": "Ham servings and leftover intent unstated: about 10 lb beside a 16 lb bird for 14; chef will not trim or invent a portion count",
       "owner": "host",
       "waiting_on": "host",
       "since": "2026-11-24T15:20:02Z"
     },
     {
-      "item": "Venue details beyond the two ovens unknown: freezer space, pan sizes for a 1.5x sweet potato casserole, and whether cooking happens in Andover or at home and is transported",
-      "owner": "host",
-      "waiting_on": "host",
-      "since": "2026-11-24T14:57:30Z"
-    },
-    {
-      "item": "Pie count undecided: chef says one pumpkin ice cream pie is likely short for 12 including four kids",
+      "item": "Venue details beyond the two ovens unknown: freezer space, pan sizes for the 1.5x-1.75x sweet potato casserole, and whether cooking happens in Andover or at home and is transported",
       "owner": "host",
       "waiting_on": "host",
       "since": "2026-11-24T14:57:30Z"
@@ -116,5 +104,5 @@
       "since": "2026-11-24T14:58:06Z"
     }
   ],
-  "note": "Host-defined event: Thanksgiving dinner, Thursday 2026-11-26, service 2 PM, 12 people (8 adults, 4 kids) as the host set, at his sister's house in Andover with two ovens. Menu: stuffed roast turkey (16 lb assumption) and a half honey spiral bone-in ham (~10 lb, room temperature), eight side dishes including Mimi's stuffing in two batches, mashed potatoes added at the host's direction, a second 5 lb bag of russets for them, honey mustard plus confirmed Swedish mustard, and one pumpkin pie. Procurement holds 56 lines: 4 catalogue-priced at $10.94, 6 host estimates at $26.62, 52 without a catalogue price. Nothing approved, ordered or bought. No brief.md or manifest.json exists for this event; those are the host's setup input, not the Planner's to write."
+  "note": "Host-defined event: Thanksgiving dinner, Thursday 2026-11-26, service 2 PM, 14 people (10 adults, 4 kids) confirmed by the host on 2026-11-24, superseding the earlier 12, at his sister's house in Andover with two ovens. Menu: stuffed roast turkey (16 lb, host-confirmed) and a half honey spiral bone-in ham (~10 lb, room temperature, no added glaze), eight sides including Mimi's stuffing in two batches (part in the bird, part baked separately) and mashed potatoes, honey mustard and confirmed Swedish mustard, beverages (sparkling water, soda, apple cider, coffee, tea — no recipes, quantities unset), and one pumpkin ice cream pie. One guest has a severe tree nut and poppy seed allergy with no cross-contamination; the host has cleared the named branded packaged goods on prior safe use, brand-specific and no substitutes. This supersedes the earlier 'no dietary constraints'. Procurement holds 61 lines: 4 catalogue-priced at $13.35, 6 host estimates at $28.12, 57 without a catalogue price. Nothing approved, ordered or bought. No brief.md or manifest.json exists for this event; those are the host's setup input, not the Planner's to write."
 }

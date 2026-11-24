@@ -85,3 +85,36 @@
 - **Headcount in doubt.** Gilman posted "Only 2 of us. No dietary constraints." (room seq 124). Every quantity, the menu and the shopping list assume 12 covers as the host set. The host has been asked whether this means 2 covers or 2 of the guest list having replied. No quantity changed and nothing was scaled.
 - "No dietary constraints" was stated by Gilman, not the host. Awaiting the host's confirmation before the gelatin, mustard and egg items become label notes rather than blockers. The stuffing safety question is unaffected.
 - Nothing approved, ordered or bought.
+
+## 2026-11-24 — headcount 14, severe allergy, stuffing split
+
+- Host confirmed **14 people — 10 adults, 4 kids** (room seq 133), superseding 12, and confirmed the **16 lb turkey**, which is no longer the chef's assumption.
+- Chef rescaled four dish groups (green bean casserole 1.17x, carrots 1.75x, relish 1.25 batches, sweet potato casserole 1.75x) and left the rest as given.
+- Procurement updated: 56 lines, 4 catalogue-priced at $13.35, 6 host estimates at $28.12, 52 unpriced.
+- Host reported **one guest with a severe tree nut and poppy seed allergy and no cross-contamination**. This supersedes Gilman's "no dietary constraints" and is recorded as superseded, not as two live versions. No recipe on the menu contains either; the risk is in packaged lines and kitchen history. Bread crumbs must be plain; vanilla ice cream, marshmallows, crispy fried onions and pie shell need clean labels.
+- Host: **the ham will not be glazed**, removing one label check.
+- Host confirmed the stuffing split: part inside the bird, a second batch baked separately as a side. Total stays two batches. The stuffing's own safe internal temperature is still not given, so the chef will not sign off the stuffed turkey.
+- Still standing at 12-cover levels: one pie and 5 lb of mash. Chef advises two pies and flags the mash as light; he will not change either without the host.
+- Nothing approved, ordered or bought.
+
+## 2026-11-24 — packaged goods cleared; beverages added
+
+- Host cleared the named branded packaged goods for the allergy on prior safe use: vanilla ice cream, marshmallows, crispy fried onions, pie shell. Recorded as brand-specific — a shop substitution voids the clearance and the label matters again. Procurement told "these brands, no substitutes".
+- The kitchen question remains separate and open: has the Andover kitchen had tree nuts in it, and what is the cleaning plan for boards, racks and hob. Plain bread crumbs stand separately on poppy seed. The Carando ham's plant coating still gets its label read — "no glaze added" is not "uncoated".
+- Food blocker now: the stuffing's own safe internal temperature.
+- Host added beverages to the menu and shopping list, no recipes: sparkling water, soda, apple cider, coffee, tea. Quantities, diet/regular mix, decaf and coffee/tea fixings are unset; chef asked for quantities and procurement will add lines once they exist.
+- Nothing approved, ordered or bought.
+
+## 2026-11-24 — beverage quantities proposed (chef's assumption)
+
+- Chef gave quantities with an explicit caveat: nothing in the catalogue covers drinks, so these are a planning assumption, not a sourced figure. For 14 over two to three hours: sparkling water about 4 litres; soda 24 cans roughly half diet; cider half a gallon; coffee about 15 cups with decaf alongside; tea about 8 bags.
+- Fixings included on the menu rather than left to the house: milk or cream (a pint, no nut milks given the allergy), sugar, a lemon, filters or pods depending on the machine, and ice.
+- Open: cider type — cloudy farm versus clear sweet, not interchangeable; and whether the kids get juice instead of soda, a call for the parents.
+- Passed to procurement as assumption quantities and to the host to confirm or replace wholesale; his figures would replace them, not blend.
+- Nothing approved, ordered or bought.
+
+## 2026-11-24 — cider confirmed
+
+- Host specified cloudy farm cider. Recorded and passed to the chef and to procurement, replacing the open cloudy-versus-clear question.
+- Still open on beverages: whether the four kids get juice instead of soda, and whether the coffee machine takes filters or pods.
+- Procurement now holds 66 lines: 4 catalogue-priced at $13.35, 6 host estimates at $28.12, 62 without a catalogue price. No total, nothing ordered.
