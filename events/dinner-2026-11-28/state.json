@@ -1,0 +1,15 @@
+{
+  "event": "dinner-2026-11-28",
+  "phase": "planned",
+  "updated_at": null,
+  "seats": [
+    { "role": "chef", "address": null, "introduced": false, "capabilities": [] },
+    { "role": "procurement", "address": null, "introduced": false, "capabilities": [] },
+    { "role": "finance", "address": null, "introduced": false, "capabilities": [] },
+    { "role": "scheduler", "address": null, "introduced": false, "capabilities": [] },
+    { "role": "guest-manager", "address": null, "introduced": false, "capabilities": [] }
+  ],
+  "open_approvals": [],
+  "blockers": [],
+  "note": "Maintained by the Planner. phase: planned | seating | planning | negotiating | awaiting_approval | done. seats is filled only from introductions; never invent or assemble an address."
+}

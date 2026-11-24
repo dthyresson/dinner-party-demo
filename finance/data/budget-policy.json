@@ -1,0 +1,13 @@
+{
+  "currency": "USD",
+  "default_non_food_reserve": 40.0,
+  "external_approval_required_for_cap_increase": true,
+  "method": [
+    "food_total is the sum of itemized food estimates after pantry deduction.",
+    "non_food_total must include the non-food reserve.",
+    "total equals food_total plus non_food_total and must not exceed the event total_cap.",
+    "food_total must not exceed the event food_cap.",
+    "Report variance against the cap; never change the cap."
+  ],
+  "note": "Method only. Event caps arrive in events/<event>/seed/finance/budget.json."
+}

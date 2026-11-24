@@ -1,0 +1,11 @@
+{
+  "event": "dinner-2026-11-28",
+  "occasion": "dinner",
+  "date": "2026-11-28T19:00",
+  "headcount": 8,
+  "room": "dinner-2026-11-28",
+  "seated": ["planner", "chef", "procurement", "finance", "scheduler", "guest-manager"],
+  "display_names": {},
+  "status": "planned",
+  "note": "seated is the launch list: compose an event by trimming it. Addresses are not recorded here; the Planner learns them from introductions and keeps them in planner/workspace/seats.json."
+}

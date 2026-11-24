@@ -1,8 +1,0 @@
-{
-  "event_id": null,
-  "date": null,
-  "arrivals": {},
-  "kitchen_access_from": null,
-  "hard_end": null,
-  "note": "No dinner is scheduled yet. Populate this once a start time and arrivals are agreed, deriving availability from calendar.json commitments."
-}

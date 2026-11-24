@@ -1,0 +1,68 @@
+{
+  "role": "chef",
+  "event": "dinner-2026-11-28",
+  "updated_at": "2026-11-24",
+  "tasks": [
+    {
+      "task_id": "t1",
+      "from": "host",
+      "title": "Add recipe: Corn Pudding with Chives (thyresson.io blog, 2008-11-20)",
+      "status": "needs_input",
+      "needs_from": [
+        "host: yield/serves not stated in the recipe",
+        "host: whether the 1/3 cup chives figure is fresh or dried"
+      ],
+      "artifacts": [
+        "data/recipes.json"
+      ]
+    },
+    {
+      "task_id": "t2",
+      "from": "host",
+      "title": "Add recipe: Green Bean Casserole (serves 12, prep 10, cook 30)",
+      "status": "done",
+      "needs_from": [],
+      "artifacts": [
+        "data/recipes.json"
+      ]
+    },
+    {
+      "task_id": "t3",
+      "from": "host",
+      "title": "Remove old seed recipes (roasted carrots, shrimp linguine, chickpea stew, mushroom risotto, citrus berries) and clean menus",
+      "status": "done",
+      "needs_from": [
+        "host: catalogue holds no starter or main, so no three-course menu can be built"
+      ],
+      "artifacts": [
+        "data/recipes.json"
+      ]
+    },
+    {
+      "task_id": "t4",
+      "from": "host",
+      "title": "Add 6 recipes from local Thanksgiving files, add a multi-value tags attribute, tag all with Thanksgiving",
+      "status": "done",
+      "needs_from": [],
+      "artifacts": [
+        "data/recipes.json"
+      ]
+    },
+    {
+      "task_id": "t5",
+      "from": "host",
+      "title": "Open questions raised by the new recipes",
+      "status": "needs_input",
+      "needs_from": [
+        "host: Mimi's Turkey Stuffing card has ingredients only, no method, oven temperature, time or yield",
+        "host: Mimi's card poultry seasoning line reads '1/2 t' with '2 T.' beside it - which is it",
+        "host: pearl onions, pumpkin pie and corn pudding state no headcount",
+        "host: cranberry recipes give volume (3 cups, 2 1/4 cups) not servings",
+        "host: the three JPEGs in the folder are byte-identical to Garlic Carrots Julienne, so the two card scans came from Thanksgiving Recipes.pdf instead"
+      ],
+      "artifacts": [
+        "data/recipes.json"
+      ]
+    }
+  ]
+}

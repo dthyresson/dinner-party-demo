@@ -1,0 +1,5 @@
+{
+  "event": "dinner-2026-11-28",
+  "guests": [],
+  "note": "Build from the guest list the Planner or host provides. guests: [{id, name, diet, precautions?, note?}]"
+}

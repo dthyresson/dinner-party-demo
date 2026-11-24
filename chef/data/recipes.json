@@ -1,91 +1,213 @@
 [
   {
-    "id": "starter-roasted-carrots",
-    "course": "starter",
-    "name": "Roasted carrots with lemon-tahini sauce",
+    "id": "side-garlic-carrots-julienne",
+    "course": "side",
+    "name": "Garlic Carrots Julienne",
+    "source": "host file: Garlic Carrots Julienne.jpg (handwritten card, 8 servs.)",
+    "tags": [
+      "Thanksgiving"
+    ],
     "serves": 8,
+    "diet": [
+      "vegetarian",
+      "contains dairy"
+    ],
+    "ingredients": {
+      "carrots_lbs": 2,
+      "carrots_julienned": true,
+      "butter_tablespoons": 2,
+      "water_tablespoons": 4,
+      "garlic_cloves": "2-3, peeled and crushed",
+      "salt_and_pepper": "to taste"
+    },
+    "prep_minutes": "unknown",
+    "notes": "Method as written: put carrots in a saucepan with the butter, water and garlic; cook covered in boiling water 5-10 minutes or until tender; drain well; season with salt and pepper; add more butter if desired. No prep time stated on the card."
+  },
+  {
+    "id": "side-mimi-turkey-stuffing",
+    "course": "side",
+    "name": "Mimi's Turkey Stuffing",
+    "source": "host file: Thanksgiving Recipes.pdf (scan, Mimi's Turkey Stuffing card)",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown",
+    "diet": [
+      "vegetarian",
+      "contains dairy",
+      "contains eggs",
+      "contains gluten"
+    ],
+    "ingredients": {
+      "cooked_mashed_potatoes_cups": 2,
+      "butter_cups": 0.75,
+      "eggs_each": 1,
+      "small_onion_each": 1,
+      "small_onion_finely_chopped": true,
+      "bread_crumbs_cups": 1,
+      "salt_and_pepper": "to taste",
+      "poultry_seasoning": "1/2 t, with '2 T.' written beside it on the card"
+    },
+    "prep_minutes": "unknown",
+    "notes": "The card lists ingredients only: no method, oven temperature, bake time, yield or pan size. Marginal note in another hand reads 'Blarg' (uncertain reading). Poultry seasoning is the herb blend; no meat is listed, but the name and any pan juices are for Guest Manager to rule on."
+  },
+  {
+    "id": "side-pearl-onions",
+    "course": "side",
+    "name": "Caramelized Pearl Onions with Orange Liqueur",
+    "source": "host file: Pearl Onions.pdf",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown",
+    "diet": [
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": {
+      "pearl_onions_lbs": "2-3 (stated as the amount for the whole Thanksgiving meal)",
+      "oil": "for sauteing, quantity not stated",
+      "salt": "a pinch",
+      "orange_liqueur_tablespoons_per_lb_onions": "1-2, Cointreau or Triple Sec"
+    },
+    "prep_minutes": "unknown",
+    "notes": "Method as written: peel the onions, or buy them peeled; boil 5-10 minutes; drain and cool until dry and slightly sticky (peel when cool if they came with skins); saute in oil until browned and caramelized; add a pinch of salt, and a few teaspoons of water at a time if needed to dissolve the browning; off the heat add 1-2 tbsp liqueur per pound and flambé. Frozen onions work: defrost and pat dry, no boiling. No serves stated; the source gives 2-3 lb for the whole meal. Gluten-free status of the liqueur not stated."
+  },
+  {
+    "id": "side-cranberry-orange-relish",
+    "course": "side",
+    "name": "Fresh Cranberry Orange Relish",
+    "source": "host file: Fresh Cranberry Orange Relish.pdf",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "3 cups",
     "diet": [
       "vegan",
       "vegetarian",
-      "shellfish-free ingredients"
+      "gluten-free ingredients",
+      "dairy-free ingredients",
+      "low-fat",
+      "low-sodium"
     ],
     "ingredients": {
-      "carrots_kg": 1.6,
-      "tahini_jar": 1,
-      "lemons_each": 3,
-      "olive_oil_ml": 80
+      "orange_each": "1, unpeeled, cut into eighths and seeded",
+      "cranberries_packages_12oz": "1, Ocean Spray fresh or frozen, rinsed and drained",
+      "sugar_cups": "3/4 to 1"
     },
-    "prep_minutes": 35
+    "prep_minutes": 5,
+    "notes": "Process half the cranberries and half the orange in a food processor until evenly chopped, transfer to a bowl, repeat with the rest, then stir in the sugar. Keeps in the fridge or freezer. Makes about 3 cups; the source's nutrition is per 1/4 cup, and it marks the recipe GF, DF, V, VG, LF, LS, K. No headcount stated. A food grinder also works."
   },
   {
-    "id": "main-shellfish-pasta",
-    "course": "main",
-    "name": "Shrimp linguine",
-    "serves": 8,
-    "diet": [
-      "contains shellfish"
+    "id": "side-fresh-cranberry-sauce",
+    "course": "side",
+    "name": "Fresh Cranberry Sauce",
+    "source": "host file: Fresh Cranberry Sauce.pdf",
+    "tags": [
+      "Thanksgiving"
     ],
-    "ingredients": {
-      "shrimp_kg": 1.6,
-      "linguine_boxes": 3,
-      "garlic_bulbs": 2,
-      "lemons_each": 2
-    },
-    "prep_minutes": 45
-  },
-  {
-    "id": "main-chickpea-stew",
-    "course": "main",
-    "name": "Chickpea, tomato and spinach stew over rice",
-    "serves": 8,
+    "serves": "2 1/4 cups",
     "diet": [
       "vegan",
       "vegetarian",
-      "shellfish-free ingredients",
-      "gluten-free ingredients"
+      "gluten-free ingredients",
+      "dairy-free ingredients",
+      "low-fat",
+      "low-sodium"
     ],
     "ingredients": {
-      "chickpea_cans": 6,
-      "tomato_cans": 4,
-      "spinach_bags": 2,
-      "rice_kg": 1.2,
-      "onion_each": 3
+      "sugar_cups": 1,
+      "water_cups": 1,
+      "cranberries_packages_12oz": "1, Ocean Spray fresh or frozen"
     },
-    "prep_minutes": 50
+    "prep_minutes": 5,
+    "notes": "Boil sugar and water, add the cranberries and return to the boil, then boil gently 10 minutes, stirring occasionally. Cover and cool completely at room temperature, then refrigerate until serving. 5 minutes prep plus 15 minutes cooking and cooling. Makes 2 1/4 cups; the source's nutrition is per 2 tablespoons and it marks the recipe GF, DF, V, VG, LF, LS, K. No headcount stated."
   },
   {
-    "id": "main-mushroom-risotto",
-    "course": "main",
-    "name": "Mushroom risotto",
-    "serves": 8,
+    "id": "side-corn-pudding-chives",
+    "course": "side",
+    "name": "Corn Pudding with Chives",
+    "source": "https://thyresson.io/blog/recipe-corn-pudding-chives/",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown",
     "diet": [
       "vegetarian",
-      "gluten-free ingredients"
+      "contains dairy",
+      "contains eggs",
+      "contains gluten"
     ],
     "ingredients": {
-      "arborio_rice_kg": 1.2,
-      "mushrooms_kg": 1.5,
-      "stock_cartons": 3,
-      "parmesan_g": 250
+      "corn_ounces": 40,
+      "eggs_each": 8,
+      "whole_milk_cups": 4,
+      "sugar_cups": 0.5,
+      "butter_sticks": 1,
+      "flour_tablespoons": 6,
+      "vanilla_teaspoons": 2,
+      "salt_teaspoons": 1,
+      "black_pepper_teaspoons": 0.5,
+      "chives_cups": "1/3"
     },
-    "prep_minutes": 55
+    "prep_minutes": "unknown",
+    "notes": "Bake at 350F for 1 hour or until a knife inserted in the centre comes out clean. Source post dated 2008-11-20. Yield not stated. Corn may be 8 fresh ears, or canned, or frozen/thawed; 1/3 cup chives listed as fresh chopped, source notes dried is usually what they use."
   },
   {
-    "id": "dessert-berries",
+    "id": "side-green-bean-casserole",
+    "course": "side",
+    "name": "Green Bean Casserole",
+    "source": "https://www.delmonte.com/recipes/collections/on-your-side/green-bean-casserole",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": 12,
+    "diet": [
+      "vegetarian",
+      "contains dairy",
+      "contains gluten",
+      "contains soy"
+    ],
+    "ingredients": {
+      "condensed_cream_of_mushroom_soup_cans_10_5oz": 2,
+      "condensed_cream_of_mushroom_soup_brand": "Campbell's",
+      "milk_cups": 1,
+      "soy_sauce_teaspoons": 2,
+      "ground_black_pepper_teaspoons": "1/4",
+      "cut_green_beans_cans_14_5oz": 4,
+      "cut_green_beans_brand": "Del Monte",
+      "green_beans_drained": true,
+      "crispy_fried_onions_cups": "2 2/3, divided (1 1/3 in the mix, 1 1/3 on top)",
+      "crispy_fried_onions_brand": "French's Original"
+    },
+    "prep_minutes": 10,
+    "notes": "Cook 30 minutes: bake uncovered at 350F for 25 minutes until hot and bubbling, stir, scatter the remaining onions, bake 5 minutes more until golden. Source recipe names specific brands and a 3-qt baking dish. Gluten and soy come from the soy sauce and the fried onions; verify labels and cross-contact before asserting anything allergy-safe."
+  },
+  {
+    "id": "dessert-pumpkin-ice-cream-pie",
     "course": "dessert",
-    "name": "Citrus berries with coconut cream",
-    "serves": 8,
+    "name": "Pumpkin Ice Cream Pie",
+    "source": "host file: Thanksgiving Recipes.pdf (scan, card attributed to Judy Gumby)",
+    "tags": [
+      "Thanksgiving"
+    ],
+    "serves": "unknown",
     "diet": [
-      "vegan",
       "vegetarian",
-      "shellfish-free ingredients",
-      "gluten-free ingredients"
+      "contains dairy",
+      "contains gluten"
     ],
     "ingredients": {
-      "berries_punnets": 4,
-      "coconut_cream_cans": 3,
-      "oranges_each": 4
+      "baked_pie_shell_each": 1,
+      "vanilla_ice_cream": "1/2 layer in the bottom of the shell, quantity not stated",
+      "canned_pumpkin_cups": "1, not pumpkin pie filling",
+      "sugar_cups": 1,
+      "nutmeg_teaspoons": "1/4",
+      "ginger_teaspoons": "1/2",
+      "salt_teaspoons": "1/2",
+      "whipping_cream_cups": 1
     },
-    "prep_minutes": 20
+    "prep_minutes": "unknown",
+    "notes": "Method as written: spread a 1/2 layer of vanilla ice cream in the bottom of one baked pie shell; mix the pumpkin, sugar, nutmeg, ginger and salt; whip the cream and fold it into the pumpkin mixture; pour into the shell; freeze at least 5 hours. No serves, pan size or prep time stated. Gluten comes from the pie shell."
   }
 ]

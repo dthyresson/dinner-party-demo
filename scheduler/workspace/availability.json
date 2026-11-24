@@ -1,0 +1,8 @@
+{
+  "event": "dinner-2026-11-28",
+  "date": null,
+  "arrivals": {},
+  "kitchen_access_from": null,
+  "hard_end": null,
+  "note": "Derived from calendar.json, never asserted. arrivals: {person_id: time}"
+}

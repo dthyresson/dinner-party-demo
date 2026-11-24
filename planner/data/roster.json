@@ -1,0 +1,58 @@
+{
+  "note": "The roster the Planner consults when composing a team. Bring a role in when a question falls in its lane; never answer for it.",
+  "roles": [
+    {
+      "slug": "chef",
+      "title": "Chef",
+      "bring_in_when": ["menu selection", "dietary safety", "prep sequencing", "substitutions"],
+      "owns": ["chef/data/", "chef/workspace/"],
+      "publishes": ["results/menu.md"],
+      "ask_for": ["recipes", "quantities per dish", "dietary safety verdict", "preparation order"],
+      "never": ["prices ingredients", "sets or approves a budget", "confirms guests", "invites anyone"]
+    },
+    {
+      "slug": "procurement",
+      "title": "Shopper (Procurement)",
+      "bring_in_when": ["ingredient pricing", "pantry deduction", "stock status", "substitutions"],
+      "owns": ["procurement/data/", "procurement/workspace/"],
+      "publishes": ["results/shopping-list.md"],
+      "ask_for": ["costed shopping list", "pantry deductions", "out-of-stock flags", "catalogue alternatives"],
+      "never": ["changes the menu or quantities", "declares budget status", "purchases anything", "approves spending"]
+    },
+    {
+      "slug": "finance",
+      "title": "Finance",
+      "bring_in_when": ["budget check", "trade-off analysis", "cap question"],
+      "owns": ["finance/data/", "finance/workspace/"],
+      "publishes": ["results/budget.json"],
+      "ask_for": ["budget verdict", "variance against the cap", "category trade-offs"],
+      "never": ["chooses or changes a dish", "increases the cap", "approves spending", "selects a substitute"]
+    },
+    {
+      "slug": "scheduler",
+      "title": "Scheduler",
+      "bring_in_when": ["timing", "arrival conflicts", "service plan"],
+      "owns": ["scheduler/data/", "scheduler/workspace/"],
+      "publishes": ["results/schedule.md"],
+      "ask_for": ["feasible timetable", "conflicts", "arrival and service timing"],
+      "never": ["confirms attendance", "changes a guest's commitment", "decides the menu"]
+    },
+    {
+      "slug": "guest-manager",
+      "title": "Guest Manager",
+      "bring_in_when": ["roster", "RSVP state", "dietary constraints", "invitation drafts"],
+      "owns": ["guest-manager/data/", "guest-manager/workspace/"],
+      "publishes": ["results/invitations/"],
+      "ask_for": ["confirmed headcount", "dietary constraints", "draft invitations", "unapproved additions"],
+      "never": ["invites or accepts a guest without host approval", "prescribes a dish", "prices anything"]
+    }
+  ],
+  "handoff_chain": [
+    "chef -> procurement: dish and exact quantities",
+    "procurement -> finance: costed list after pantry deduction",
+    "finance -> procurement/chef: pass, or over by an amount",
+    "procurement -> chef: catalogue alternatives when over",
+    "chef -> procurement/finance: revised dish"
+  ],
+  "escalate_to_host_for": ["extra guest", "time change", "spend above the cap"]
+}

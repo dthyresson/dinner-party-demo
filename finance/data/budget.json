@@ -1,9 +1,0 @@
-{
-  "event": null,
-  "currency": "USD",
-  "total_cap": 300.0,
-  "non_food_reserve": 40.0,
-  "food_cap": 260.0,
-  "external_approval_required_for_cap_increase": true,
-  "non_food_estimate": 40.0
-}

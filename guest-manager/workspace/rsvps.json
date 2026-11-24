@@ -1,0 +1,7 @@
+{
+  "event": "dinner-2026-11-28",
+  "invitations_sent": [],
+  "responses": {},
+  "extra_guests_approved": 0,
+  "note": "Drafts only; nothing is sent. A request to bring a guest is not an approval. responses: {guest_id: accepted | declined | no_response}"
+}

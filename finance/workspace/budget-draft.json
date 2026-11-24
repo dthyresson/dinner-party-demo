@@ -1,0 +1,12 @@
+{
+  "event": "dinner-2026-11-28",
+  "currency": "USD",
+  "total_cap": null,
+  "non_food_reserve": null,
+  "food_cap": null,
+  "food_total": null,
+  "non_food_total": null,
+  "total": null,
+  "status": "unset",
+  "note": "Fill the caps from the event brief once you have it. status: unset | proposed | within_cap | over_cap."
+}
