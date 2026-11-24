@@ -1,11 +1,10 @@
 # Dinner Party — composable multi-agent event team
 
-A **fictional, local-only** fixture for an agent factory. Six positional roles plan an event — a
-three-course dinner for eight on **Saturday, November 28, 2026**, with a **$300 total cap** — each
-running as its own session in its own directory, talking only through the event room.
+A **fictional, local-only** fixture for an agent factory. Six positional roles plan an event — each
+running as its own session, in its own directory, talking only through the event room.
 
-The same role directories run any occasion. Composing Thanksgiving, a birthday or New Year's means
-a new folder under `events/` and a new room — never an edit to a role.
+The role directories are the product; they never change between occasions. Composing Thanksgiving, a
+birthday or a New Year's dinner means a new folder under `events/` and a new room.
 
 ## What is unusual here
 
@@ -20,23 +19,26 @@ a new folder under `events/` and a new room — never an edit to a role.
   roster. There is no guest list, no calendar, no pantry and no cap beyond the brief.
 - **No invented facts.** A value that was not given to the role is recorded `unknown` and asked for.
   A plausible guess is a failure, not progress.
+- **A missing fact becomes a blocker, not a paragraph.** Open approvals and blockers collect in the
+  Planner's `state.json`, each with an owner.
 - **Every role has a falsifiable Definition of done**, in its `ROLE.md`.
 
-## Network and the room
+## An event is a folder plus a room
 
-The no-network rule is org-wide (`AGENTS.md` rule 12) and repeated in each role's `## Never`. It
-applies to the presenter too: an agent that refuses to fetch a URL is behaving correctly, not
-broken.
+| File | Writer | Holds |
+| --- | --- | --- |
+| `events/<event>/brief.md` | setup input, read-only to agents | the host's request: occasion, date, headcount, budget, constraints |
+| `events/<event>/manifest.json` | setup input, read-only to agents | the room and the `seated` list, optional `display_names` |
+| `events/<event>/state.json` | the Planner only | `phase`, `seats`, `open_approvals`, `blockers` |
 
-- **Why:** the fixture only works if every identity, price and record is fictional. A live fetch can
-  smuggle real data in and quietly make a "fictional" plan non-fictional.
-- **The room is not an exception the agent has to reason about.** The harness carries the messages;
-  the agent never makes its own web calls. That is why the contracts say "the room and message
-  channel your harness provides" and never name Parle.
-- **No URLs exist in this repo**, agent-facing or otherwise, by design. If an agent was handed a URL,
-  it came from the conversation.
-- **If a role needs outside material,** paste the relevant text into the conversation rather than
-  asking it to look something up.
+An event is complete only when all three exist. Two live here:
+
+- **`events/dinner-2026-11-28/`** — the fixture. Brief, manifest and state are all present and the
+  state is at `phase: planned` with every seat unseated. Start here.
+- **`events/thanksgiving-2026-11-26/`** — a host-defined run. It has `state.json` only: the host gave
+  the brief in the room and the Planner correctly declined to author `brief.md` or `manifest.json`.
+  Read it as an example of blockers being recorded, not as a launchable event until the host writes
+  those two files.
 
 ## Three ways to use it
 
@@ -50,8 +52,8 @@ broken.
 
 1. Read [`LAUNCH.md`](LAUNCH.md), then [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) and
    [`organization.md`](organization.md).
-2. Pick an event folder, e.g. `events/dinner-2026-11-28/`. `brief.md` holds the host request,
-   `manifest.json` the room and the `seated` list, `state.json` the Planner's progress record.
+2. Pick an event folder, e.g. `events/dinner-2026-11-28/`. Confirm `brief.md`, `manifest.json` and
+   `state.json` all exist.
 3. Launch **one session per seated role**, rooted in that role's directory. Give each only its own
    folder, the root documents, the event `brief.md`, and read-only `results/`.
 4. Submit the host request from `brief.md` to the Planner. Roles introduce themselves, the Planner
@@ -82,6 +84,71 @@ Good things to try:
 - Ask Finance to check a $380 list. It should ask for the costed lines rather than inventing prices.
 - Ask the Guest Manager to add a guest. It should say the host has not approved it.
 
+## How the roles fit together
+
+Each role is its own session, rooted in its own folder. The room is the only way they talk. The
+`results/` files are the only way they hand over an artifact, and each has exactly one writer.
+
+```mermaid
+flowchart LR
+    H["Host"] -->|"request · approvals"| R["Event room<br/>the only cross-role channel"]
+
+    R <--> PL["planner/"]
+    R <--> CH["chef/"]
+    R <--> PR["procurement/"]
+    R <--> FI["finance/"]
+    R <--> SC["scheduler/"]
+    R <--> GM["guest-manager/"]
+
+    PL --> ST["events/&lt;event&gt;/state.json"]
+    PL --> DEC["results/decisions.md"]
+    CH --> MENU["results/menu.md"]
+    PR --> SHOP["results/shopping-list.md"]
+    FI --> BUD["results/budget.json"]
+    SC --> SCHED["results/schedule.md"]
+    GM --> INV["results/invitations/"]
+```
+
+The handoff chain is the part that proves lanes do not cross. Each arrow is a message, and each box
+may speak only for its own domain:
+
+```mermaid
+flowchart TD
+    A["Chef<br/>names the dish and exact quantities<br/>never a price"] -->|"quantities, unchanged"| B["Procurement<br/>prices in catalogue units<br/>never the budget verdict"]
+    B -->|"costed list, on-hand shown"| C["Finance<br/>within cap, or over by an amount<br/>never a dish"]
+
+    C -->|"over by $X"| D["Procurement<br/>offers catalogue alternatives"]
+    D --> E["Chef<br/>revises the dish"]
+    E -->|"new quantities"| B
+
+    C -->|"within cap"| F["Planner<br/>records it in decisions.md"]
+    A -->|"unsafe or impossible"| F
+```
+
+The Planner tracks the event through a fixed set of phases, and `state.json` is the only place that
+phase lives:
+
+```mermaid
+stateDiagram-v2
+    [*] --> planned
+    planned --> seating: launch one session per seated role
+    seating --> planning: every seat introduced itself
+    planning --> negotiating: the Chef's menu and quantities exist
+    negotiating --> awaiting_approval: cost fits, or a trade-off is proposed
+    awaiting_approval --> planning: the host revises the request
+    awaiting_approval --> done: the host approves
+    done --> [*]
+```
+
+## Data isolation
+
+| Tier | Path | Read | Write |
+| --- | --- | --- | --- |
+| Capability knowledge | `<role>/data/` | owning session | owning session |
+| Working state and tasks | `<role>/workspace/` | owning session | owning session |
+| Event record | `events/<event>/` | seated sessions | Planner owns `state.json`; `brief.md` and `manifest.json` are setup input |
+| Published deliverables | `results/` | everyone | exactly one owner per file |
+
 ## Structure
 
 - `AGENTS.md` — organization-wide rules
@@ -99,61 +166,28 @@ Good things to try:
 Python is not required. **This repository is a fixture, not an agent runtime** — your agent factory
 supplies sessions, routing and messaging.
 
-## Data isolation
+## Network and the room
 
-| Tier | Path | Read | Write |
-| --- | --- | --- | --- |
-| Capability knowledge | `<role>/data/` | owning session | owning session |
-| Working state and tasks | `<role>/workspace/` | owning session | owning session |
-| Event record | `events/<event>/` | seated sessions | Planner owns `state.json`; `brief.md` and `manifest.json` are setup input |
-| Published deliverables | `results/` | everyone | exactly one owner per file |
+The no-network rule is org-wide (`AGENTS.md` rule 12) and repeated in each role's `## Never`. It
+applies to the presenter too: an agent that refuses to fetch a URL is behaving correctly, not
+broken.
+
+- **Why:** the fixture only works if every identity, price and record is fictional. A live fetch can
+  smuggle real data in and quietly make a "fictional" plan non-fictional.
+- **The room is not an exception the agent has to reason about.** The harness carries the messages;
+  the agent never makes its own web calls. That is why the contracts say "the room and message
+  channel your harness provides" and never name Parle.
+- **No URLs exist in this repo**, agent-facing or otherwise, by design. If an agent was handed a URL,
+  it came from the conversation.
+- **If a role needs outside material,** paste the relevant text into the conversation rather than
+  asking it to look something up.
 
 ## Intended outcome
 
-A feasible menu covering vegan and shellfish-allergy requirements, a service time that works for
-the latest arrival, a costed list respecting the total cap and non-food reserve, drafts rather than
-sent messages, and a decision record that never claims an approval the host did not give.
-
-## Agent organization
-
-```mermaid
-flowchart TD
-    H["Host / User"]
-    COS["Planner<br/>Owns outcome, composes the team and reconciles constraints"]
-    GM["Guest Manager<br/>Roster, RSVPs, dietary constraints"]
-    SCH["Scheduler<br/>Calendar, arrivals, preparation and service timing"]
-    CHEF["Chef<br/>Menu, recipes, food safety and preparation sequence"]
-    PROC["Shopper (Procurement)<br/>Catalogue, availability, pricing and shopping plan"]
-    FIN["Finance<br/>Budget method, cap and non-food reserve"]
-
-    H -->|"Event request and approvals"| COS
-    COS -->|"Seats and assigns work"| GM
-    COS -->|"Seats and assigns work"| SCH
-    COS -->|"Seats and assigns work"| CHEF
-    COS -->|"Seats and assigns work"| PROC
-    COS -->|"Seats and assigns work"| FIN
-
-    GM -->|"Attendance and dietary constraints"| COS
-    GM -.->|"Minimum necessary guest facts"| CHEF
-    GM -.->|"Availability constraints"| SCH
-
-    SCH -->|"Feasible event timetable"| COS
-    SCH -.->|"Timing requirements"| CHEF
-    SCH -.->|"Arrival and service timing"| GM
-
-    CHEF -->|"Menu and ingredient requirements"| COS
-    CHEF -.->|"Recipe quantities"| PROC
-    CHEF -.->|"Safety and substitution decisions"| PROC
-    CHEF -.->|"Dietary constraints"| GM
-    CHEF -.->|"Preparation sequence"| SCH
-
-    PROC -->|"Costed shopping proposal"| COS
-    PROC -.->|"Prices and availability"| FIN
-    PROC -.->|"Supply constraints and substitutions"| CHEF
-
-    FIN -->|"Budget viability and trade-offs"| COS
-    FIN -.->|"Spending limits"| PROC
-```
+A feasible menu covering every dietary constraint the host states, a service time that works for the
+latest arrival, a costed list respecting the event's cap and reserve, drafts rather than sent
+messages, and a decision record that never claims an approval the host did not give. When a fact is
+missing, the plan says so and names who owes it.
 
 ## Approval boundaries
 
