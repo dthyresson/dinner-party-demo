@@ -84,6 +84,47 @@ Good things to try:
 - Ask Finance to check a $380 list. It should ask for the costed lines rather than inventing prices.
 - Ask the Guest Manager to add a guest. It should say the host has not approved it.
 
+## The specialists
+
+Six roles. Each is a separate session rooted in its own directory, and each can be omitted from an
+event by trimming `seated` in the manifest. The full contract, including the Definition of done,
+lives in each role's `ROLE.md`.
+
+**Planner** — `planner/`
+- Composes the team for one event, seats it, routes work, reconciles findings, owns the decision
+  record and the event state.
+- Publishes `results/decisions.md`; maintains `events/<event>/state.json`.
+- Alone may say "the host approved". Never prices, plans a menu, confirms a guest or sets a
+  timetable.
+
+**Chef** — `chef/`
+- Owns the recipe catalogue, the menu, exact ingredient quantities, dietary safety and preparation
+  order.
+- Publishes `results/menu.md`.
+- Never prices, budgets, confirms a guest or decides service time.
+
+**Shopper (Procurement)** — `procurement/`
+- Owns the price catalogue, supplier facts and stock status; turns the Chef's quantities into a
+  costed list.
+- Publishes `results/shopping-list.md`.
+- Never changes the menu or quantities, declares whether the budget fits, or purchases.
+
+**Finance** — `finance/`
+- Owns the budget method and reserve policy, and is the only role that may rule a list within or
+  over the cap.
+- Publishes `results/budget.json`.
+- Never chooses a dish or a substitute, raises the cap, or approves spending.
+
+**Scheduler** — `scheduler/`
+- Owns the calendar and the event timetable: arrivals, kitchen access, prep and service timing.
+- Publishes `results/schedule.md`.
+- Never confirms attendance, accepts an RSVP, or moves a time without the host.
+
+**Guest Manager** — `guest-manager/`
+- Owns the guest roster, RSVP state, dietary constraints and invitation drafts.
+- Publishes `results/invitations/`.
+- Never invites or accepts without host approval, sends anything, or prescribes a dish.
+
 ## How the roles fit together
 
 Each role is its own session, rooted in its own folder. The room is the only way they talk. The
